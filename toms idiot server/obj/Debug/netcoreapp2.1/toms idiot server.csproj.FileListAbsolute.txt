@@ -1,0 +1,14 @@
+C:\Code\dumb server\toms idiot server\toms idiot server\bin\Debug\netcoreapp2.1\toms idiot server.deps.json
+C:\Code\dumb server\toms idiot server\toms idiot server\bin\Debug\netcoreapp2.1\toms idiot server.runtimeconfig.json
+C:\Code\dumb server\toms idiot server\toms idiot server\bin\Debug\netcoreapp2.1\toms idiot server.runtimeconfig.dev.json
+C:\Code\dumb server\toms idiot server\toms idiot server\bin\Debug\netcoreapp2.1\toms idiot server.dll
+C:\Code\dumb server\toms idiot server\toms idiot server\bin\Debug\netcoreapp2.1\toms idiot server.pdb
+C:\Code\dumb server\toms idiot server\toms idiot server\obj\Debug\netcoreapp2.1\toms idiot server.csproj.CoreCompileInputs.cache
+C:\Code\dumb server\toms idiot server\toms idiot server\obj\Debug\netcoreapp2.1\toms idiot server.RazorAssemblyInfo.cache
+C:\Code\dumb server\toms idiot server\toms idiot server\obj\Debug\netcoreapp2.1\toms idiot server.RazorAssemblyInfo.cs
+C:\Code\dumb server\toms idiot server\toms idiot server\obj\Debug\netcoreapp2.1\toms idiot server.AssemblyInfoInputs.cache
+C:\Code\dumb server\toms idiot server\toms idiot server\obj\Debug\netcoreapp2.1\toms idiot server.AssemblyInfo.cs
+C:\Code\dumb server\toms idiot server\toms idiot server\obj\Debug\netcoreapp2.1\toms idiot server.RazorTargetAssemblyInfo.cache
+C:\Code\dumb server\toms idiot server\toms idiot server\obj\Debug\netcoreapp2.1\toms idiot server.dll
+C:\Code\dumb server\toms idiot server\toms idiot server\obj\Debug\netcoreapp2.1\toms idiot server.pdb
+C:\Code\dumb server\toms idiot server\toms idiot server\obj\Debug\netcoreapp2.1\toms idiot server.csprojAssemblyReference.cache
