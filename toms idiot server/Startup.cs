@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using toms_idiot_server.Hubs;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 
 namespace toms_idiot_server
 {
@@ -25,7 +27,16 @@ namespace toms_idiot_server
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAny", x =>
+                {
+                    x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials();
+                });
+            });
+            services.AddSignalR();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,8 +50,14 @@ namespace toms_idiot_server
             {
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseCookiePolicy();
+            app.UseCors("AllowAny");
+            app.UseSignalR(routes => 
+            {
+                routes.MapHub<ChartHub>("/chart");
+            });
             app.UseMvc();
         }
     }
