@@ -8,14 +8,16 @@ namespace toms_idiot_server.TimerFeatures
 {
     public class TimerManager
     {
-        private Timer _timer;
+        public Timer _timer;
         private AutoResetEvent _autoResetEvent;
         private Action _action;
+        public Guid Id;
 
         public DateTime TimerStarted { get; }
 
         public TimerManager(Action action)
         {
+            Id = Guid.NewGuid();
             _action = action;
             _autoResetEvent = new AutoResetEvent(false);
             _timer = new Timer(Execute, _autoResetEvent, 1000, 2000);

@@ -1,7 +1,21 @@
-<p>first works!</p>
-
-<input type="text" >
-&nbsp;
+<br>
+<br>
 <p></p>
+<div class="text-center">
 <input type="text"  [(ngModel)]='message'>
-<button (click)="buttonClicked()">Send</button>
+<button (click)="chatRoomTest()" type="button" class="btn btn-primary" [disabled]="disabledSendChat">Send Message</button>
+<p></p>
+<button (click)="signalRButtonStart()" type="button" class="btn btn-primary">Start SignalR</button>
+<p></p>
+<button (click)="signalRButtonStop()" type="button" class="btn btn-primary">Stop SignalR</button>
+<p></p>
+
+<p></p>
+<button (click)="chatRoomJoin()" type="button" class="btn btn-primary" [disabled]="disabledJoinChat">Join Chat</button>
+    <br>
+    <br>
+    <br>
+    <li style="list-style: none;" *ngFor="let message of signalRService.messageList">
+        {{message}}
+    </li>
+</div>

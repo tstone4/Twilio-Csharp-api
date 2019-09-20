@@ -57,6 +57,7 @@ namespace toms_idiot_server
             app.UseSignalR(routes => 
             {
                 routes.MapHub<ChartHub>("/chart");
+                routes.MapHub<ChatHub>("/chat");
             });
             app.UseMvc();
         }
